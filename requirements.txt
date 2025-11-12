@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pyngrok
+llama-index
+llama-index-embeddings-huggingface
+llama-index-llms-google-genai
+torch
+transformers
+sentence-transformers
