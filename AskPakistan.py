@@ -313,7 +313,7 @@ async def websocket_endpoint(websocket: WebSocket):
                 await websocket.send_text("Thank you for using AskPakistan. Have a great day! 👋")
                 break
             try:
-                # Run the sync query in a thread so it doesn't block the event loop
+               
                 response = await asyncio.get_event_loop().run_in_executor(
                     executor, query_engine.query, data
                 )
@@ -338,4 +338,5 @@ if __name__ == "__main__":
 
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000, reload=False)
+
 
